@@ -13,11 +13,9 @@
         <h3>Generate unique and complex passwords</h3>
     </header>
     <div class="container">
-      <button ng-click="ctrl.addPassword()" type="button" name="button">Generate New Password</button>
+      <button ng-click="ctrl.run()" type="button" name="button">Generate New Password</button>
         <div class="passwordList">
-          <ul>
-            <li ng-repeat="password in ctrl.currentPasswords">{{ password }}</li>
-          </ul>
+          <h2>{{ ctrl.password }}</h2>
         </div>
     </div>
   </body>
