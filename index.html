@@ -13,10 +13,14 @@
         <h3>Generate unique and complex passwords</h3>
     </header>
     <div class="container">
-      <button ng-click="ctrl.run()" type="button" name="button">Generate New Password</button>
-        <div class="passwordList">
-          <h2>{{ ctrl.password }}</h2>
-        </div>
+      <h3>Password length:
+        <select ng-init='selectedLength = passwordLength[5]' class='select' ng-model='selectedLength' ng-options='x for x in passwordLength'>'10'
+        </select>
+      </h3>
+        <button ng-click="ctrl.run()" type="button" name="button">Generate New Password</button>
+          <div class="passwordList">
+            <h2>{{ ctrl.password }}</h2>
+          </div>
     </div>
   </body>
 </html>
