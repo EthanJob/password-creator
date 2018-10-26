@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html ng-app='PasswordApp' lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Password Creator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/app.js" charset="utf-8"></script>
   </head>
-  <body>
+  <body ng-controller='MainController as ctrl'>
     <header>
       <h1>Welcome to Password Creator</h1>
         <h3>Generate unique and complex passwords</h3>
     </header>
     <div class="container">
-      <button type="button" name="button">Generate New Password</button>
+      <button ng-click="ctrl.addPassword()" type="button" name="button">Generate New Password</button>
         <div class="passwordList">
-          <h4></h4>
+          <ul>
+            <li ng-repeat="password in ctrl.currentPasswords">{{ password }}</li>
+          </ul>
         </div>
     </div>
   </body>
