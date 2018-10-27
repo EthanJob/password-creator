@@ -17,8 +17,4 @@ this.run = () => {
   console.log('New password: ', this.password);
 };
 
-// this.run();
-
-  console.log("app.js is connected");
-
 });
