@@ -1,3 +1,33 @@
 body {
   text-align: center;
+  background: black;
+  color: white;
+}
+
+select {
+  color: black;
+}
+
+button {
+  margin-top: 15px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 200px;
+  transition: .5s;
+}
+
+button:hover {
+  border-color: red;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width:500px) {
+  body {
+    width: 100%;
+    padding: 15px;
+  }
+
 }

@@ -2,6 +2,7 @@
 <html ng-app='PasswordApp' lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Creator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" charset="utf-8"></script>
@@ -15,7 +16,7 @@
     </header>
     <div class="container">
       <h3>Password length:
-        <select ng-init='selectedLength = passwordLength[5]' class='select' ng-model='selectedLength' ng-options='x for x in passwordLength'>'10'
+        <select ng-init='selectedLength = passwordLength[5]' class='select' ng-model='selectedLength' ng-options='x for x in passwordLength'>
         </select>
       </h3>
         <button ng-click="ctrl.run()" type="button" name="button">Generate New Password</button>
